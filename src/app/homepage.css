@@ -1,0 +1,50 @@
+@keyframes bounce {
+    0%, 100% {
+      transform: translateY(3px);
+    }
+    50% {
+      transform: translateY(-3px);
+    }
+}
+  
+.bounce-arrow {
+    animation: bounce 1s infinite ease-in-out; 
+}
+
+.card-left span, .card-right span, .card-center span {
+  font-weight: bold;
+  color: oklch(0.627 0.265 303.9);
+}
+
+@keyframes btnBorder {
+  0% {
+    border: 1px solid #111;
+  }
+  50% {
+    border: 1px solid #222;
+  }
+  100% {
+    border: 1px solid #111;
+  }
+}
+.animate-btn-border {
+  animation: 1s btnBorder infinite ease-in-out;
+}
+
+@keyframes spinAnim {
+  0% {
+    transform: rotate(0deg);
+    scale: 1;
+  }
+  50% {
+    transform: rotate(180deg);
+    scale: 1.2;
+  }
+  100% {
+    transform: rotate(360deg);
+    scale: 1;
+  }
+}
+.spin-animation {
+  animation: 2.5s spinAnim infinite ease-in-out;
+}

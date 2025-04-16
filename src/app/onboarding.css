@@ -1,0 +1,21 @@
+.category-game, .category-set, .category-name {
+    transform: scale(1);
+    transition: .3s;
+    transition-timing-function: ease-in-out;
+}
+
+.category-hidden {
+    transform: translateX(-200px) scale(0.75);
+    filter: blur(8px);
+    opacity: 0;
+    transition: .3s;
+    transition-timing-function: ease-in-out;
+}
+
+.category-not-shown {
+    transform: translateX(200px) scale(0.75);
+    filter: blur(8px);
+    opacity: 0;
+    transition: .3S;
+    transition-timing-function: ease-in-out;
+}
